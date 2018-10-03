@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.5)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 4.5.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
@@ -34,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit.ControlsToolkit.Test
     [DefaultEvent("PalettePaint")]
     [DefaultProperty("BasePaletteMode")]
     [DesignerCategory("code")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=4.50.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=5.450.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [Description("Customisable palette component.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
