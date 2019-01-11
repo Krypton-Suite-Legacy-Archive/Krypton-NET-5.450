@@ -1,4 +1,4 @@
-# <img src="https://rawgit.com/Wagnerp/Krypton-NET-4.7/master/Help/Output/Logo.PNG">-NET-4.50
+# <img src="https://rawgit.com/Wagnerp/Krypton-NET-4.7/master/Help/Output/Logo.PNG"> NET 4.50
 
 =======
 
@@ -10,7 +10,7 @@
 
 =======
 
-## 2019-01-11 Build 716
+## 2019-01-11 Build 700
 * Code parity with 5.470
 * New NuGet package
 
