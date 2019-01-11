@@ -1349,7 +1349,7 @@ namespace PaletteDesigner
             // buttonSpecAny28
             // 
             this.buttonSpecAny28.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.ArrowDown;
-            this.buttonSpecAny28.UniqueName = "5C9E40DBFF67470B5C9E40DBFF67470B";
+            this.buttonSpecAny28.UniqueName = "5C9E40DBFF67450B5C9E40DBFF67450B";
             // 
             // buttonSpecAny27
             // 
@@ -4705,7 +4705,7 @@ namespace PaletteDesigner
             this.pageTabDockAutoHidden.Size = new System.Drawing.Size(100, 100);
             this.pageTabDockAutoHidden.Text = "Dock AutoHidden";
             this.pageTabDockAutoHidden.ToolTipTitle = "Page ToolTip";
-            this.pageTabDockAutoHidden.UniqueName = "028B6F04D305450D028B6F04D305450D";
+            this.pageTabDockAutoHidden.UniqueName = "028B6F04D305460D028B6F04D305460D";
             // 
             // pageTabCustom1
             // 

@@ -6,7 +6,7 @@
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
-//  Version 4.5.0.0  www.ComponentFactory.com
+//  Version 5.450.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -16,9 +16,9 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyVersion("5.450.593.0")]
-[assembly: AssemblyFileVersion("5.450.593.0")]
-[assembly: AssemblyInformationalVersion("5.450.593.0")]
+[assembly: AssemblyVersion("5.450.614.0")]
+[assembly: AssemblyFileVersion("5.450.614.0")]
+[assembly: AssemblyInformationalVersion("5.450.614.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006-2019. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017-2019. All rights reserved.")]
 [assembly: AssemblyProduct("Krypton Docking")]
 [assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Docking.dll")]

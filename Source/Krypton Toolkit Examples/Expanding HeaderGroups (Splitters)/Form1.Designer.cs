@@ -97,7 +97,7 @@ namespace ExpandingHeaderGroupsSplitters
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(450, 24);
+            this.menuStrip.Size = new System.Drawing.Size(460, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -162,11 +162,11 @@ namespace ExpandingHeaderGroupsSplitters
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.kryptonPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(450, 309);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(460, 309);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 24);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(450, 334);
+            this.toolStripContainer1.Size = new System.Drawing.Size(460, 334);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -181,7 +181,7 @@ namespace ExpandingHeaderGroupsSplitters
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonPanel1.Size = new System.Drawing.Size(450, 309);
+            this.kryptonPanel1.Size = new System.Drawing.Size(460, 309);
             this.kryptonPanel1.TabIndex = 0;
             // 
             // kryptonSplitContainerHorizontal
@@ -399,7 +399,7 @@ namespace ExpandingHeaderGroupsSplitters
             this.statusStrip1.Location = new System.Drawing.Point(0, 358);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(450, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(460, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -407,7 +407,7 @@ namespace ExpandingHeaderGroupsSplitters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 380);
+            this.ClientSize = new System.Drawing.Size(460, 380);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.statusStrip1);
