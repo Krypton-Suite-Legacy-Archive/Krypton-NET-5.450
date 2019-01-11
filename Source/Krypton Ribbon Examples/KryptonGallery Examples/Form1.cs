@@ -1,25 +1,22 @@
 ﻿// *****************************************************************************
 // 
-//  © Component Factory Pty Ltd 2012. All rights reserved.
+//  © Component Factory Pty Ltd 2012 - 2019. All rights reserved.
 //	The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.50.0.0 	www.ComponentFactory.com
+//  Version 5.450.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
-using System;
-using System.Text;
-using System.Drawing;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Collections.Generic;
 using ComponentFactory.Krypton.Ribbon;
 using ComponentFactory.Krypton.Toolkit;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace KryptonGalleryExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         public Form1()
         {
@@ -71,7 +68,7 @@ namespace KryptonGalleryExamples
             {
                 KryptonContextMenuHeading h = new KryptonContextMenuHeading();
                 h.Text = "Customize Drop Menu";
-                
+
                 KryptonContextMenuItems items1 = new KryptonContextMenuItems();
                 KryptonContextMenuItem item1 = new KryptonContextMenuItem();
                 item1.Text = "Custom Entry 1";

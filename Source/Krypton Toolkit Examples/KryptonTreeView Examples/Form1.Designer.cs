@@ -203,6 +203,10 @@
             this.buttonRemove.Values.Text = "Remove";
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
+            // kryptonManager1
+            // 
+            this.kryptonManager1.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
+            // 
             // kryptonCheckSet
             // 
             this.kryptonCheckSet.CheckButtons.Add(this.checkSystem);
@@ -227,7 +231,6 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "KryptonTreeView Examples";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

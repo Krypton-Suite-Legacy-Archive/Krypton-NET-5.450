@@ -4,7 +4,7 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace KryptonTreeViewExamples
 {
-    public partial class Form1 : KryptonForm
+    public partial class Form1 : Form
     {
         private int _next = 1;
         private Random _rand = new Random();
@@ -110,11 +110,6 @@ namespace KryptonTreeViewExamples
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

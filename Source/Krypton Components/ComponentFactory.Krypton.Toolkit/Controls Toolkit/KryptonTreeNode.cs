@@ -1,17 +1,16 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2018, All rights reserved.
+//  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 4.5.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-using System;
-using System.ComponentModel;
 using System.Drawing;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
@@ -26,22 +25,6 @@ namespace ComponentFactory.Krypton.Toolkit
         private string _longText;
         private Color _longForeColor;
         private Font _longNodeFont;
-        private KryptonContextMenu _kryptonContextMenu;
-        #endregion
-
-        #region Properties
-        public virtual KryptonContextMenu KryptonContextMenu
-        {
-            get
-            {
-                return _kryptonContextMenu;
-            }
-
-            set
-            {
-                _kryptonContextMenu = value;
-            }
-        }
         #endregion
 
         #region Events
@@ -51,16 +34,6 @@ namespace ComponentFactory.Krypton.Toolkit
         [Category("Property Changed")]
         [Description("Occurs when the value of property has changed.")]
         public event PropertyChangedEventHandler PropertyChanged;
-        #endregion
-
-        #region Krypton Context Menu
-        private void OnKryptonContextMenuClosed(object sender, EventArgs e)
-        {
-            KryptonContextMenu kcm = (KryptonContextMenu)sender;
-            kcm.Closed -= OnKryptonContextMenuClosed;
-        }
-
-
         #endregion
 
         #region Identity
@@ -123,11 +96,6 @@ namespace ComponentFactory.Krypton.Toolkit
             _longText = string.Empty;
             _longForeColor = Color.Empty;
             _longNodeFont = null;
-
-            if (KryptonContextMenu != null)
-            {
-                //ContextMenu = KryptonContextMenu;
-            }
         }
         #endregion
 
@@ -142,7 +110,7 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             get => _longText;
 
-            set
+            set 
             {
                 if (_longText != value)
                 {
@@ -209,7 +177,7 @@ namespace ComponentFactory.Krypton.Toolkit
             return _longNodeFont != null;
         }
         #endregion
-
+        
         #region Protected
         /// <summary>
         /// Raises the PropertyChanged event.
@@ -219,6 +187,6 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             PropertyChanged?.Invoke(this, e);
         }
-        #endregion
+        #endregion 
     }
 }

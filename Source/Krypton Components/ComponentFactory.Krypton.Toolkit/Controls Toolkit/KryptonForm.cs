@@ -1,11 +1,11 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2018, All rights reserved.
+//  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 4.5.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
@@ -186,9 +186,6 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Create the view manager instance
             ViewManager = new ViewManager(this, _drawDocker);
-
-            // Use shadow
-            UseDropShadow = true;
         }
 
         /// <summary>
@@ -357,7 +354,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <summary>
         /// Allows the use of drop shadow around the form.
         /// </summary>
-        [Category("Appearance")]
+        [Category("Visuals")]
         [Description("Allows the use of drop shadow around the form.")]
         [DefaultValue(true)]
         public bool UseDropShadow
@@ -1623,7 +1620,9 @@ namespace ComponentFactory.Krypton.Toolkit
             return cp;
         }
 
-        // Example by juverpp
+        /// <summary>
+        /// Example by juverpp 
+        /// </summary>
         protected override CreateParams CreateParams
         {
             get

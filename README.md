@@ -10,6 +10,12 @@
 
 =======
 
+## 2019-01-11 Build 716
+* Code parity with 5.470
+* New NuGet package
+
+=======
+
 ## 2018-06-25 Initial commit
 * Now you can export your custom palette creation in the `Krypton Palette Example` application.
 * Start work on getting the system themes to display the extras. Issue #37 & #38
