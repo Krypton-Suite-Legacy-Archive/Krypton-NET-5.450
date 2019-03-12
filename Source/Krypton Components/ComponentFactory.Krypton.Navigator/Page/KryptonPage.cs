@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 5.450.0.0  www.ComponentFactory.com
@@ -25,7 +25,7 @@ namespace ComponentFactory.Krypton.Navigator
     [ToolboxBitmap(typeof(KryptonPage), "ToolboxBitmaps.KryptonPage.bmp")]
     [DefaultEvent("Click")]
 	[DefaultProperty("Text")]
-    [Designer(typeof(ComponentFactory.Krypton.Navigator.KryptonPageDesigner))]
+    [Designer(typeof(KryptonPageDesigner))]
     [DesignerCategory("code")]
 	[DesignTimeVisible(false)]
     public class KryptonPage : VisualPanel
@@ -821,8 +821,9 @@ namespace ComponentFactory.Krypton.Navigator
         /// <summary>
         /// Gets and sets the preferred size for the page when inside an auto hidden slide panel.
         /// </summary>
-        [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Advanced)]
+        [Category("Appearance")]
+        [Description("When used within a KryptonDockingSpace,\nGive a hint on the Minimum Initial size needed")]
         public virtual Size AutoHiddenSlideSize
         {
             get => _autoHiddenSlideSize;

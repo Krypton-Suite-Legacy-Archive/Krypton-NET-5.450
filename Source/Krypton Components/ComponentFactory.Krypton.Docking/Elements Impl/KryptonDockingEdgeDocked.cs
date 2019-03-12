@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 5.450.0.0  www.ComponentFactory.com
@@ -89,7 +89,7 @@ namespace ComponentFactory.Krypton.Docking
         /// <returns>Reference to docking element that handles the new dockspace.</returns>
         public KryptonDockingDockspace AppendDockspace(string name)
         {
-            return CreateAndInsertDockspace(Count, name, new Size(200, 200));
+            return AppendDockspace(name, new Size(200, 200));
         }
 
         /// <summary>
@@ -122,7 +122,7 @@ namespace ComponentFactory.Krypton.Docking
         /// <returns>Reference to docking element that handles the new dockspace.</returns>
         public KryptonDockingDockspace InsertDockspace(int index, string name)
         {
-            return CreateAndInsertDockspace(index, name, new Size(200, 200));
+            return InsertDockspace(index, name, new Size(200, 200));
         }
 
         /// <summary>

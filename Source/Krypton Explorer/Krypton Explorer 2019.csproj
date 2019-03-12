@@ -108,8 +108,8 @@
     <Content Include="Krypton.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5450">
-      <Version>5.450.716</Version>
+    <PackageReference Include="KryptonToolkitSuite5470">
+      <Version>5.450.741</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 5.450.0.0  www.ComponentFactory.com
@@ -156,7 +156,7 @@ namespace ComponentFactory.Krypton.Toolkit
 		public bool IsFixedSize => false;
 
 	    /// <summary>
-		/// Removes first occurance of specified item.
+		/// Removes first occurence of specified item.
 		/// </summary>
 		/// <param name="value">Object reference.</param>
 		public void Remove(object value)
@@ -210,7 +210,7 @@ namespace ComponentFactory.Krypton.Toolkit
             // Not allow to add the same item more than once
             if (_list.Contains(item))
             {
-                throw new ArgumentOutOfRangeException(nameof(item), "Item already in collection");
+                throw new ArgumentOutOfRangeException(nameof(item), @"Item already in collection");
             }
 
             // Generate before insert event
@@ -311,7 +311,7 @@ namespace ComponentFactory.Krypton.Toolkit
             // Not allow to add the same item more than once
             if (_list.Contains(item))
             {
-                throw new ArgumentOutOfRangeException(nameof(item), "Item already in collection");
+                throw new ArgumentOutOfRangeException(nameof(item), @"Item already in collection");
             }
 
             // Generate before insert event
@@ -371,7 +371,7 @@ namespace ComponentFactory.Krypton.Toolkit
 		public bool IsReadOnly => false;
 
 	    /// <summary>
-        /// Removes first occurance of specified item.
+        /// Removes first occurence of specified item.
 		/// </summary>
 		/// <param name="item">Item reference.</param>
 		/// <returns>True if removed; otherwise false.</returns>

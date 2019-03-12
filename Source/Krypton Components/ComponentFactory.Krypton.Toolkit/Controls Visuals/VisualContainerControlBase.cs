@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 5.450.0.0  www.ComponentFactory.com
@@ -239,7 +239,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <summary>
         /// Check if the layout is dirty and if so perform the layout now.
         /// </summary>
-        /// <param name="viewLayout">Shoudl the view be layed out as well.</param>
+        /// <param name="viewLayout">Should the view be layed out as well.</param>
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Advanced)]
         public void CheckPerformLayout(bool viewLayout)

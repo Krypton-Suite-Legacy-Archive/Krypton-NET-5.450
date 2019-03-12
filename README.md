@@ -10,6 +10,12 @@
 
 =======
 
+## 2019-03-12 Build 792
+* Code parity with 5.470
+* New NuGet package
+
+=======
+
 ## 2019-01-11 Build 700
 * Code parity with 5.470
 * New NuGet package

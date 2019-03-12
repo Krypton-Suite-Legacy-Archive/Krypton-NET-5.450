@@ -3,7 +3,7 @@
 //  © Component Factory Pty Ltd, 2006-2019, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
-//  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
+//  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
 //  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.450)
 //  Version 5.450.0.0  www.ComponentFactory.com
@@ -14,6 +14,7 @@ using System.Xml;
 using System.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using ComponentFactory.Krypton.Toolkit;
 using ComponentFactory.Krypton.Workspace;
 using ComponentFactory.Krypton.Navigator;
@@ -70,6 +71,20 @@ namespace ComponentFactory.Krypton.Docking
 
             if (pages != null)
             {
+                Size currentHintSize = SpaceControl.Size;
+                foreach (Size newPageSize in pages.Select(page => page.AutoHiddenSlideSize))
+                {
+                    if (currentHintSize.Width < newPageSize.Width)
+                    {
+                        currentHintSize.Width = newPageSize.Width;
+                    }
+                    if (currentHintSize.Height < newPageSize.Height)
+                    {
+                        currentHintSize.Height = newPageSize.Height;
+                    }
+                }
+
+                SpaceControl.Size = currentHintSize;
                 // If there is no active cell...
                 KryptonWorkspaceCell cell = SpaceControl.ActiveCell;
                 if (cell == null)
@@ -131,6 +146,19 @@ namespace ComponentFactory.Krypton.Docking
             // Append all the pages to end of the cell pages collection
             if (pages != null)
             {
+                Size currentHintSize = SpaceControl.Size;
+                foreach (Size newPageSize in pages.Select(page => page.AutoHiddenSlideSize))
+                {
+                    if (currentHintSize.Width < newPageSize.Width)
+                    {
+                        currentHintSize.Width = newPageSize.Width;
+                    }
+                    if (currentHintSize.Height < newPageSize.Height)
+                    {
+                        currentHintSize.Height = newPageSize.Height;
+                    }
+                }
+                SpaceControl.Size = currentHintSize;
                 cell.Pages.AddRange(pages);
             }
         }
@@ -184,6 +212,19 @@ namespace ComponentFactory.Krypton.Docking
             if (pages != null)
             {
                 // Insert all the pages in sequence starting at the provided index
+                Size currentHintSize = SpaceControl.Size;
+                foreach (Size newPageSize in pages.Select(page => page.AutoHiddenSlideSize))
+                {
+                    if (currentHintSize.Width < newPageSize.Width)
+                    {
+                        currentHintSize.Width = newPageSize.Width;
+                    }
+                    if (currentHintSize.Height < newPageSize.Height)
+                    {
+                        currentHintSize.Height = newPageSize.Height;
+                    }
+                }
+                SpaceControl.Size = currentHintSize;
                 foreach (KryptonPage page in pages)
                 {
                     cell.Pages.Insert(index++, page);
