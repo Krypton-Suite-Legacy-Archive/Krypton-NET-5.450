@@ -271,7 +271,7 @@
     <None Include="Resources\SendMail.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="KryptonToolkitSuite5470">
+    <PackageReference Include="KryptonToolkitSuite5450">
       <Version>5.450.720</Version>
     </PackageReference>
   </ItemGroup>

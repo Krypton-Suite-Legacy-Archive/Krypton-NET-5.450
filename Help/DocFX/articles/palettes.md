@@ -14,7 +14,7 @@ library itself. For example the *Office 2007 - Blue* and *Professional - Office
 component to alter the global palette to one of the built in choices. Figure 1
 shows the global palette being altered to a built in palette.
 
-![*Figure 1 - KryptonManager smart tag*](images\PalettteManager.png)
+![*Figure 1 - KryptonManager smart tag*](images\PaletteManager.png)
 
 *Figure 1 - KryptonManager smart tag*
 
