@@ -99,6 +99,7 @@ namespace ComponentFactory.Krypton.Toolkit
                     shadowForm.Dispose();
                 }
             }
+
         }
 
         private void FormLoaded(object sender, EventArgs e)
